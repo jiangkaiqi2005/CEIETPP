@@ -3,6 +3,13 @@
 暑期集中进行数据集调研、筛选与模型训练实验的工作区。
 本目录仅保留文档，所有数据集（warehouses、ADE20K、TartanGround、recon terrain dataset 等）及训练产物均已通过 `.gitignore` 排除，不入库。
 
+## 数据集获取（网盘分享）
+
+数据集 `Datasets` 已通过百度网盘分享：
+
+- 链接：https://pan.baidu.com/s/1wpakcQsQiVQkwPQZ15H12A?pwd=uptm
+- 提取码：uptm
+
 ## 数据集调研记录
 
 - **warehouses**：数据集质量很好，但为视频格式，需要转换，且没有 `stairs`（楼梯）类别，考虑更换。
