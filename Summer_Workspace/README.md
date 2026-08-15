@@ -39,3 +39,38 @@
 
 
 训练结果不好，数据太少了。
+
+
+## 训练目录与记录约定
+
+训练输出统一放在 `runs/` 下（`runs` 是 YOLO 标准输出目录名，不改名），每个模块/版本一个子目录：
+
+```text
+runs/
+├── recon_v0.1.0/    # 模块名_版本号
+├── detect_v0.1/     # 以后新模块
+└── seg_v0.2/        # 以后新版本
+```
+
+训练时通过 `project` + `name` 指定输出位置：
+
+```bash
+yolo segment train data=<data.yaml> model=<起始权重>     project=Summer_Workspace/runs name=recon_v0.1.0
+```
+
+每次训练完成后，在「训练结果」下按以下模板追加记录：
+
+```markdown
+### 使用 <数据集名>
+
+#### v0.x.y：<日期>
+- 起始权重：
+- 训练参数：
+- 数据划分：
+- 最佳指标：
+- 训练产物：`runs/<模块名_版本>/weights/best.pt`（已入库）
+- 训练记录：`runs/<模块名_版本>/results.csv`、`args.yaml`
+- 结论：
+```
+
+`.gitignore` 已放行整个 `Summer_Workspace/runs/`，新训练产物会自动入库，无需再改配置。
