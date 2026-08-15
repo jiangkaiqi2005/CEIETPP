@@ -50,6 +50,11 @@ Post_Midterm_Workspace/Datasets/**/raw/
 Post_Midterm_Workspace/Datasets/**/yolo_format/
 Post_Midterm_Workspace/Datasets/**/annotations/
 
+# 暑期工作区数据集目录
+Summer_Workspace/ADEChallengeData2016/
+Summer_Workspace/recon_terrain_dataset/
+Summer_Workspace/warehouses/
+
 # 4. 忽略训练输出 runs 与 weights 目录
 runs/
 **/runs/
