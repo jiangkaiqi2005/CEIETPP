@@ -119,5 +119,4 @@ desktop.ini
 !Summer_Workspace/yolo26n-seg.pt
 !Summer_Workspace/yolo26n.pt
 !Summer_Workspace/runs/
-!Summer_Workspace/runs/train/
-!Summer_Workspace/runs/train/**
+!Summer_Workspace/runs/**

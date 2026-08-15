@@ -24,11 +24,18 @@
 
 ## 训练结果
 
+
+### 使用recon terrain dataset
+
+#### v0.1.0：2026.8.15
 2026-08-15 使用 **recon terrain dataset** 完成 YOLO26 segmentation 训练（100/100 epoch）：
 
 - 起始权重：`yolo26n-seg.pt`（官方预训练，已移至本目录）
 - 训练参数：epochs=100、batch=16、imgsz=640、cls_remap=True
 - 数据划分：train 1007 / valid 126 / test 126（17 类）
 - 最佳指标（epoch 80）：mask mAP50-95 = 0.32412、mask mAP50 = 0.42759、box mAP50-95 = 0.3418、box mAP50 = 0.43528
-- 训练产物：`runs/train/weights/best.pt`、`runs/train/weights/last.pt`（已入库）
-- 训练记录：`runs/train/results.csv`、`runs/train/args.yaml`、`runs/train/labels.jpg`、`runs/train/train_batch*.jpg`
+- 训练产物：`runs/recon_v0.1.0/weights/best.pt`、`runs/recon_v0.1.0/weights/last.pt`（已入库）
+- 训练记录：`runs/recon_v0.1.0/results.csv`、`runs/recon_v0.1.0/args.yaml`、`runs/recon_v0.1.0/labels.jpg`、`runs/recon_v0.1.0/train_batch*.jpg`
+
+
+训练结果不好，数据太少了。
