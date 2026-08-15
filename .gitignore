@@ -1,0 +1,111 @@
+# ==========================================
+# CEIETPP Git Ignore Rules
+# ==========================================
+
+# 1. 忽略所有图像、视频、压缩包等大文件 (Media & Archives)
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.webp
+*.gif
+*.mp4
+*.avi
+*.mov
+*.zip
+*.tar
+*.gz
+*.tar.gz
+*.rar
+*.7z
+
+# 2. 忽略模型权重与训练产物 (Weights & Checkpoints)
+*.pt
+*.pth
+*.onnx
+*.engine
+*.weights
+*.bin
+*.safetensors
+*.tflite
+*.pkl
+*.cache
+
+# 3. 忽略数据集目录 (Datasets)
+# VOC / COCO / 自建数据集目录
+**/VOCdevkit/
+**/yolo-cocostuff/
+**/Dataset/
+**/datasets/
+**/coco/
+
+# 中期后工作区数据集图像与标注排除
+Post_Midterm_Workspace/Datasets/**/images/
+Post_Midterm_Workspace/Datasets/**/labels/
+Post_Midterm_Workspace/Datasets/**/img/
+Post_Midterm_Workspace/Datasets/**/label/
+Post_Midterm_Workspace/Datasets/**/raw/
+Post_Midterm_Workspace/Datasets/**/yolo_format/
+Post_Midterm_Workspace/Datasets/**/annotations/
+
+# 4. 忽略训练输出 runs 与 weights 目录
+runs/
+**/runs/
+weights/
+**/weights/
+Pre_Midterm_Archive/runs/
+Pre_Midterm_Archive/main/yolov8/runs/
+Pre_Midterm_Archive/main/yolov8/weights/
+Post_Midterm_Workspace/Training_Results_and_Weights/Current_ROS_Weight/*
+Post_Midterm_Workspace/Training_Results_and_Weights/New_Training_Results/*
+
+# 5. Python 编译文件与虚拟环境
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 6. 编辑器与 IDE 配置
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+*.downloading
+*.tmp
+
+# 7. 保留关键文档与空目录占位
+!**/README.md
+!**/.gitkeep
