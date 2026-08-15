@@ -16,3 +16,8 @@
 
 - 训练产物（权重、results.csv、args.yaml、曲线图等）入库；`.gitignore` 已放行 `Summer_Workspace/runs/**`，新训练产物会自动入库，不要新增忽略规则。
 - 数据集不入库（.gitignore 排除），通过百度网盘分享获取（链接与提取码见 `Summer_Workspace/README.md`）。
+
+## 提交规范
+
+- 提交信息（标题与描述）一律用中文书写。
+- 提交与推送时不得添加 `Co-Authored-By` 等协助者署名。

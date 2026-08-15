@@ -29,6 +29,11 @@
 - 运行 `rqt_image_view`、`rviz2` 时不要激活 YOLO venv，也不要保留 YOLO 的 `PYTHONPATH`。
 - 启动 YOLO 节点前必须激活 `~/yolo_ws/src/yolo_ros/.venv`，并把 `.venv` 的 site-packages 加进 `PYTHONPATH`，否则可能找不到 `torch` 或 `ultralytics`。
 
+## 提交规范
+
+- 提交信息（标题与描述）一律用中文书写。
+- 提交与推送时不得添加 `Co-Authored-By` 等协助者署名。
+
 ## 当前状态
 
 已完成：
