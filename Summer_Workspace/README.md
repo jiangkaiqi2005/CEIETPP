@@ -40,6 +40,16 @@
 
 训练结果不好，数据太少了。
 
+#### v0.2.0：2026.8.15
+2026-08-15 使用 **recon terrain dataset** 完成 YOLO26 segmentation 训练（m 模型，111/150 epoch 早停）：
+
+- 起始权重：`yolo26m-seg.pt`（官方预训练）
+- 训练参数：epochs=150、batch=16、imgsz=640、cls_remap=True、patience=30（第 111 epoch 早停）
+- 数据划分：train 1007 / valid 126 / test 126（17 类）
+- 最佳指标（epoch 81）：mask mAP50-95 = 0.39012、mask mAP50 = 0.50984、box mAP50-95 = 0.40873、box mAP50 = 0.51563
+- 训练产物：`runs/recon_v0.2.0/weights/best.pt`、`runs/recon_v0.2.0/weights/last.pt`（已入库）
+- 训练记录：`runs/recon_v0.2.0/results.csv`、`runs/recon_v0.2.0/args.yaml`、`runs/recon_v0.2.0/labels.jpg`、`runs/recon_v0.2.0/train_batch*.jpg`
+- 结论：m 模型较 v0.1.0（nano）各指标提升约 18-20%，混淆矩阵明显改善（carpet/grass/gravel/mud/tile-floor/wall 等对角清晰），但 curb/ledge、debris/dirt pile、stairs/ramp 仍易混；验证损失未随训练下降，数据量仍是主要瓶颈。
 
 ## 训练目录与记录约定
 
