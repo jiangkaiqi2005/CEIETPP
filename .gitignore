@@ -114,3 +114,10 @@ desktop.ini
 # 7. 保留关键文档与空目录占位
 !**/README.md
 !**/.gitkeep
+
+# 8. 暑期工作区权重与训练产物放行（2026-08-15 训练完成）
+!Summer_Workspace/yolo26n-seg.pt
+!Summer_Workspace/yolo26n.pt
+!Summer_Workspace/runs/
+!Summer_Workspace/runs/train/
+!Summer_Workspace/runs/train/**
